@@ -1,14 +1,14 @@
-import openai
-from os.path import join, dirname, realpath
 import json
 import os
+from os.path import join, dirname, realpath
+from tempfile import TemporaryDirectory
 
+import openai
 import PyPDF2
 import slate3k as slate
-
-from tempfile import TemporaryDirectory
-import pytesseract
 from pdf2image import convert_from_path
+import pytesseract
+
 
 openai.api_key_path = "private/openai_api_key.txt"
 
