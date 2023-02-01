@@ -177,10 +177,21 @@ def extract(f):
         response = ""
     
     # print the response
+    if DEBUG:
+        try:
+            print(json.dumps(json.loads(response), indent=4))
+        except:
+            print(response)
+
+    # match the json from the string of text,
+    # the json is surrounded by curly braces
     try:
-        print(json.dumps(json.loads(response), indent=4))
+        # remove new lines so that the regex works
+        response = response.replace("\n", "")
+
+        response = re.search(r"{.*}", response).group(0)
     except:
-        print(response)
+        pass
 
     return response
 
@@ -199,16 +210,6 @@ def main():
 
         # extract text and generate a response
         response = extract(f)
-
-        # match the json from the string of text,
-        # the json is surrounded by curly braces
-        try:
-            # remove new lines so that the regex works
-            response = response.replace("\n", "")
-
-            response = re.search(r"{.*}", response).group(0)
-        except:
-            pass
 
         # add the response to the list of responses
         try:
