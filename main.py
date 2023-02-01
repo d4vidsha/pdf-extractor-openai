@@ -23,7 +23,7 @@ OUTPUT_FOLDER = "tests"
 DEBUG = True
 
 # Completion length
-COMPLETION_LENGTH = 100
+COMPLETION_LENGTH = 300
 
 # Summarization length
 SUMMARIZATION_LENGTH = 300
