@@ -9,8 +9,9 @@ import slate3k as slate
 from pdf2image import convert_from_path
 import pytesseract
 
+# OpenAI API key path
+OPENAI_API_KEY_PATH = "private/openai_api_key.txt"
 
-openai.api_key_path = "private/openai_api_key.txt"
 
 # Folder target containing the pdfs
 FOLDER = "samples"
@@ -143,6 +144,9 @@ def openai_generate(text, filename):
     return response.get("choices")[0].get("text")
 
 def main(): 
+
+    openai.api_key_path = OPENAI_API_KEY_PATH
+
 
     responses = []
 
