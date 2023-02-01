@@ -2,6 +2,7 @@ import openai
 from os.path import join, dirname, realpath
 import json
 import os
+
 import PyPDF2
 import slate3k as slate
 
