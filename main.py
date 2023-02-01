@@ -147,7 +147,6 @@ def main():
 
     openai.api_key_path = OPENAI_API_KEY_PATH
 
-
     responses = []
 
     # extract text from sample folder
