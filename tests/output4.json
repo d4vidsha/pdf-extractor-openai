@@ -1,0 +1,76 @@
+{
+    "responses": [
+        {
+            "date": "Monday November 7th",
+            "client_name": "David Jones",
+            "location": "Isamu's Studio Parking, 9 Glasshouse Road, Collingwood VIC 3066",
+            "confidence_score": 0.95
+        },
+        {
+            "date": "Thursday November 10th",
+            "client_name": "Just Jeans",
+            "location": "Heide Museum of Modern Art, 7 Templestowe Rd, Bulleen VIC 3105",
+            "confidence_score": 0.8
+        },
+        {
+            "date": "Wednesday 9 November 2022",
+            "client_name": "The Body Shop",
+            "location": "Sunstudios (studio 1&2) 95 Buckhurst Street, South Melbourne",
+            "confidence_score": "0.9"
+        },
+        {
+            "date": "Friday 4th November 2022",
+            "client_name": "Witchery",
+            "location": "Daylight Studios",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "10th and 11th November 2022",
+            "client_name": "Wesfarmers",
+            "location": "Secure Car Park on Oxford St or on Stanley St",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "Tue, Nov 29, 2022",
+            "client_name": "July Campaigns",
+            "location": "Mood Studios 2, 109 Nicholson St, Brunswick East VIC 3057, Australia",
+            "confidence_score": "0.9"
+        },
+        {
+            "date": "Wednesday 9th November 2022",
+            "client_name": "Goldmate",
+            "location": "Oak Grove",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "",
+            "client_name": "Paper Stone Scissors",
+            "location": "Palace Foreshore, St Kilda",
+            "confidence_score": 1.0
+        },
+        {
+            "date": null,
+            "client_name": "MAJELLA Otherworldly Productions",
+            "location": "Collingwood VIC 3066",
+            "confidence_score": 0.7
+        },
+        {
+            "date": "Wednesday 23 November 2022",
+            "client_name": "Live Brighter Campaign",
+            "location": "20 Griffiths St, Caulfield South",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "Saturday 19th November 2022",
+            "client_name": "Nine Network Australia Pty Ltd",
+            "location": "Melbourne Cricket Ground (MCG)",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "17th November",
+            "client_name": "Corinthian Peninsula",
+            "location": "Coles Collingwood Carpark, 172 Smith Street, Collingwood",
+            "confidence_score": 0.9
+        }
+    ]
+}

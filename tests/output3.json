@@ -1,0 +1,16 @@
+{
+    "responses": [
+        "\n\n{\n  \"date\": \"Monday November 7th\",\n  \"client_name\": \"David Jones\",\n  \"location\": \"Isamu's Studio Parking, 9 Glasshouse Road, Collingwood VIC 3066\",\n  \"confidence\": 0.9\n}",
+        "\n\n{\n    \"date\": \"Thursday November 10th\",\n    \"client_name\": \"Just Jeans\",\n    \"location\": \"Heide Museum of Modern Art, 7 Templestowe Rd, Bulleen VIC 3105\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n    \"date\": \"Wednesday 9 November 2022\",\n    \"client_name\": \"The Body Shop\",\n    \"location\": \"Sunstudios (studio 1&2) 95 Buckhurst Street, South Melbourne\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n    \"date\": \"Friday 4th November 2022\",\n    \"client_name\": \"Witchery Campaign Shoot\",\n    \"location\": \"Daylight Studios in St Kilda, Victoria\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n    \"date\": \"10th and 11th of November 2022\",\n    \"client_name\": \"Wesfarmers product #2043\",\n    \"location\": \"unknown\",\n    \"confidence_score\": 0.5\n}",
+        "\n\n{\n    \"date\": \"Tue, Nov 29, 2022\",\n    \"client_name\": \"Mood Studios\",\n    \"location\": \"109 Nicholson St, Brunswick East VIC 3057, Australia\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n    \"date\": \"Wednesday 9th November 2022\",\n    \"client_name\": \"Goldmate\",\n    \"location\": \"Oak Grove\",\n    \"confidence_score\": 0.95\n}",
+        "\n\n{\n    \"date\": \"Friday 25 November\",\n    \"client_name\": \"Peter Alexander\",\n    \"location\": \"NSW, Australia\",\n    \"confidence_score\": 0.8\n}",
+        "\n\n{\n    \"date\": \"Friday, 18th November\",\n    \"client_name\": \"MAJELLA Otherworldly Productions\",\n    \"location\": \"M on W Studios in Collingwood, Victoria\",\n    \"confidence_score\": \"0.7\"\n}",
+        "\n\n{\n    \"date\": \"Wednesday 23 November\",\n    \"client_name\": \"Live Brighter Campaign 2022\",\n    \"location\": \"20 Griffiths St, Caulfield South\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n    \"date\": \"Saturday 19th November 2022\",\n    \"client_name\": \"Nine Network Australia Pty Ltd\",\n    \"location\": \"Melbourne Cricket Ground (MCG)\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n    \"date\": \"17th November\",\n    \"client_name\": \"Hart & Co.\",\n    \"location\": \"9 Glasshouse Road, Collingwood, Victoria\",\n    \"confidence_score\": 0.9\n}"
+    ]
+}

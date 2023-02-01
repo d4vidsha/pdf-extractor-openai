@@ -1,0 +1,15 @@
+{
+    "responses": [
+        {
+            "date": "2020-11-07",
+            "client_name": "David Jones",
+            "location": [
+                "Glasshouse Road",
+                "Collingwood",
+                "VIC",
+                "3066"
+            ],
+            "confidence": 0.9
+        }
+    ]
+}
