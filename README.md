@@ -1,1 +1,1 @@
-# ai-pdf-extractor
+# pdf-extractor-openai
