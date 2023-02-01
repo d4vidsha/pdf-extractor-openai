@@ -1,6 +1,9 @@
 # ignore virtual environment
 venv/
 
+# ignore .vscode
+.vscode/
+
 # gitignore everything in specific folders except README.md
 private/*
 !private/README.md

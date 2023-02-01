@@ -1,0 +1,5 @@
+{
+    "responses": [
+        "\nHere is the output:\n```json\n{\n    \"date\": \"2022-11-04\",\n    \"client_name\": \"Witchery Fashions PTY LTD\",\n    \"location\": \"572 Swan Street, Burnley VIC 3121\",\n    \"confidence_score\": 0.9\n}\n```"
+    ]
+}

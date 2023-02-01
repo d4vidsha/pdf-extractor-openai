@@ -1,0 +1,71 @@
+{
+    "responses": [
+        {
+            "date": "2022-11-07",
+            "client_name": "David Jones",
+            "location": "9 Glasshouse Road, Collingwood VIC 3066",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-10",
+            "client_name": "Just Jeans",
+            "location": "7 Templestowe Rd, Bulleen VIC 3105",
+            "confidence": 0.9
+        },
+        {
+            "date": "2022-11-09",
+            "client_name": "The Body Shop",
+            "location": "95 Buckhurst Street, South Melbourne, VIC, 3205",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-04",
+            "client_name": "Witchery",
+            "location": "Daylight Studios, 12 Dianella Lane, St Kilda, VIC 3182",
+            "confidence_score": 0.8
+        },
+        "\nAnswer:\n{\n  \"date\": \"2022-11-11\",\n  \"client_name\": \"Wesfarmers\",\n  \"location\": \"172 Wellington Street, Collingwood VIC, 3066\",\n  \"confidence_score\": 0.8\n}",
+        {
+            "date": "2022-11-29",
+            "client_name": "Viviens Creative",
+            "location": "109 Nicholson St, Brunswick East VIC 3057, Australia",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-09",
+            "client_name": "Goldmate - Oak Grove",
+            "location": "2175 Smiths Lane & 2125 Thompsons Road, Clyde North, VIC, 3978",
+            "confidence_score": 0.8
+        },
+        {
+            "date": "2020-11-25",
+            "client_name": "Peter Alexander",
+            "location": "Palace Foreshore, Lower Esplanade, St Kilda",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-18",
+            "client_name": "Majella Productions",
+            "location": "M on W Studios, Collingwood, Victoria, 3066",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-22",
+            "client_name": "Coco Productions",
+            "location": "20 Griffiths St, Caulfield South, VIC, 3162",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-19",
+            "client_name": "Nine Network Australia Pty Ltd",
+            "location": "Melbourne Cricket Ground (MCG), Richmond VIC 3002",
+            "confidence_score": 0.9
+        },
+        {
+            "date": "2022-11-17",
+            "client_name": "Hart & Co.",
+            "location": "9 Glasshouse Road, Collingwood, Victoria 3066",
+            "confidence_score": 1
+        }
+    ]
+}

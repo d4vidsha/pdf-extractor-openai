@@ -1,0 +1,16 @@
+{
+    "responses": [
+        "\nOutput:\n{\n    \"date\": \"2022-11-07\",\n    \"client_name\": \"David Jones\",\n    \"location\": \"9 Glasshouse Road, Collingwood, VIC, 3066\",\n    \"confidence_score\": 0.9\n}",
+        "\nHere is the output json:\n\n{\n    \"date\": \"2022-11-09\",\n    \"client_name\": \"Just Jeans\",\n    \"location\": \"7 Templestowe Rd, Bulleen VIC 3105\",\n    \"confidence_score\": 0.9\n}",
+        "\nOutput:\n\n{\n    \"date\": \"2022-11-09\",\n    \"client_name\": \"The Body Shop\",\n    \"location\": \"95 Buckhurst Street, South Melbourne, VIC, 3205\",\n    \"confidence_score\": 0.9\n}",
+        "\n\nThe output would be:\n\n```\n{\n    \"date\": \"2022-11-04\",\n    \"client_name\": \"Witchery\",\n    \"location\": \"1/122 Chapel Street, St Kilda, VIC 3182\",\n    \"confidence_score\": 0.9\n}\n```",
+        "\n\nHere is the output json:\n```\n{\n    \"date\": \"2022-11-10\",\n    \"client_name\": \"Wesfarmers\",\n    \"location\": \"172 Wellington St, Collingwood VIC, 3066\",\n    \"confidence_score\": 0.9\n}\n```",
+        "\nHere is the output:\n```\n{\n    \"date\": \"2022-11-29\",\n    \"client_name\": \"Viviens Creative\",\n    \"location\": \"109 Nicholson St, Brunswick East VIC 3057, Australia\",\n    \"confidence_score\": 0.7\n}\n```",
+        "\nThe output json object:\n\n{\n    \"date\": \"2022-11-09\",\n    \"client_name\": \"Goldmate - Oak Grove\",\n    \"location\": \"2175 Smiths Lane & 2125 Thompsons Road, Clyde North, VIC, 3978\",\n    \"confidence_score\": 0.9\n}",
+        "\n\nHere is the output:\n```\n{\n    \"date\": \"2021-11-25\",\n    \"client_name\": \"Peter Alexander\",\n    \"location\": \"Palace Foreshore, St Kilda, VIC, 3182\",\n    \"confidence_score\": 0.95\n}\n```",
+        "\nHere is the output json object:\n\n{\n\t\"date\": \"2022-11-18\",\n\t\"client_name\": \"Majella Productions\",\n\t\"location\": \"172 Wellington St, Collingwood, VIC 3066\",\n\t\"confidence\": 0.9\n}",
+        "\nAnswer:\n{\n  \"date\": \"2022-11-22\",\n  \"client_name\": \"Beacon Lighting, Live Brighter\",\n  \"location\": \"20 Griffiths St, Caulfield South, VIC 3162\",\n  \"filename\": \"Callsheet_20221122_Coco Productions_Lucas Allen_Beacon Lighting, Live Brighter_Crew.pdf\",\n  \"confidence_score\": 0.9",
+        "\n\nHere is the output:\n\n```\n{\n    \"date\": \"2022-11-19\",\n    \"client_name\": \"Nine Network Australia Pty Ltd\",\n    \"location\": \"1 Denison St, North Sydney, NSW, 2060\",\n    \"confidence_score\": 0.9\n}\n```",
+        "\nHere is the output json:\n\n{\n    \"date\": \"2022-11-17\",\n    \"client_name\": \"Hart & Co.\",\n    \"location\": \"9 Glasshouse Road, Collingwood, Victoria, 3066\",\n    \"confidence_score\": 0.8\n}"
+    ]
+}
