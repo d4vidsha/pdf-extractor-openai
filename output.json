@@ -1,0 +1,16 @@
+{
+    "responses": [
+        "\n\n{\n    \"date\": \"Monday November 7th\",\n    \"client_name\": \"David Jones\",\n    \"location\": \"Isamu's Studio, 9 Glasshouse Road, Collingwood VIC 3066\",\n    \"confidence_score\": 0.8\n}",
+        "\n\n{\n    \"date\": \"Thursday November 10th\",\n    \"client_name\": \"Just Jeans\",\n    \"location\": \"Heide Museum of Modern Art, 7 Templestowe Rd, Bulleen VIC 3105\", \n    \"confidence_score\": 0.95\n}",
+        "",
+        "\n\n{\n    \"date\": \"Friday 4th November 2022\",\n    \"client_name\": \"Witchery Fashions PTY LTD\",\n    \"location\": \"Daylight Studios - 1/122 Chapel St, St Kilda VIC 3182\",\n    \"confidence_score\": 0.95\n}",
+        "",
+        "\n\n{\n    \"date\": \"November 2, 2020\",\n    \"client_name\": \"Mood Studios\",\n    \"location\": \"109 Nicholson St, Brunswick East VIC 3056, Australia\",\n    \"confidence_score\": 0.9\n}",
+        "\n\n{\n  \"date\": \"Wednesday 9th November 2022\",\n  \"client_name\": \"Goldmate - Oak Grove\",\n  \"location\": \"2175 Smiths Lane & 2125 Thompsons Road, Clyde North\u2028\",\n  \"confidence_score\": 0.9\n}",
+        "",
+        "",
+        "",
+        "",
+        "\n\n{\n    \"date\": \"1FFM\",\n    \"client_name\": \"4BDLWJMMF 4USFFU\",\n    \"location\": \"*TTFZhT TUVEJP\",\n    \"confidence_score\": 0.8\n}"
+    ]
+}
