@@ -10,18 +10,15 @@ This is a simple Python script to extract certain information from PDFs using Op
 
 ## Usage
 
-To use this script, you will need to install the requirements using `pip install -r requirements.txt`.
+1. Install the requirements using `pip install -r requirements.txt`.
+2. You will also need to create a file called `openai_api_key.txt` and add your OpenAI API key to it. The file should look like this:
 
-You will also need to create a file called `openai_api_key.txt` and add your OpenAI API key to it. The file should look like this:
+    ```txt
+    sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    ```
 
-```txt
-sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-It should then be added to the `private` folder.
-
-Then add the PDFs you want to extract information from to the `samples` folder.
-
-Once you have done this, you can run the script using `python main.py` and it will extract the information from the PDFs and save it to the `tests` folder.
+3. It should then be added to the `private` folder.
+4. Add any PDFs to the `samples` folder.
+5. Run the script using `python main.py` and it will extract the information from the PDFs and save it to the `tests` folder.
 
 There are additional options you can use with the script by editing the `main.py` file. Check the comments in the file for more information.
