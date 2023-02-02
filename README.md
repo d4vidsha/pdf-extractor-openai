@@ -2,7 +2,11 @@
 
 This is a simple Python script to extract certain information from PDFs using OpenAI's GPT-3 API.
 
-If you would like to use this script, you will need to create an OpenAI account and get an API key. You can do this [here](https://beta.openai.com/).
+## Prerequisites
+
+- Python
+- OpenAI API key
+- PDFs to extract information from
 
 ## Usage
 
