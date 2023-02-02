@@ -22,6 +22,9 @@ OUTPUT_FOLDER = "tests"
 # Debug mode
 DEBUG = True
 
+# Do one PDF only
+DO_ONE = True
+
 # Completion length
 COMPLETION_LENGTH = 300
 
@@ -33,6 +36,13 @@ MAX_CONTENT_LENGTH = 4097
 
 # Chunk size
 CHUNK_SIZE = MAX_CONTENT_LENGTH - SUMMARIZATION_LENGTH
+
+# Fields to extract
+FIELDS = [
+    "date",
+    "client_name",
+    "location"
+]
 
 def send_to_file(f, data):
     '''
@@ -128,6 +138,16 @@ def openai_summarize(text):
     else:
         return openai_summarize_helper(text)
 
+def format_fields(fields):
+    '''
+    Format the fields to be used in the prompt.
+    The format is:
+    - field1
+    - field2
+    - field3
+    '''
+    return "\n".join([f"- {field}" for field in fields])
+
 def openai_generate(text, filename):
     '''
     Generate a response from openai using only text/string data.
@@ -140,7 +160,7 @@ def openai_generate(text, filename):
     # make the request
     response = openai.Completion.create(
         model="text-davinci-003",
-        prompt=f"Return in json format with the following fields extracted from the input text:\n- date\n- client_name\n- location\n\n\nAdditionally, add a confidence score between 0 and 1 to the same payload that indicates how certain you are about the correctness of the details.\n\n\nIf you couldn't find certain details, make them `null`.\n\n\nNormalise the date to YYYY-mm-dd.\n\n\nNormalise the location to \"number street, city, state, postcode\"\n\n\nOnly reply with json and nothing more.\n\n\nHere is the input text: \n```\n{text}\n```\n\n\nHere is also the input text's filename: \n```\n{filename}\n```\n",
+        prompt=f"Return in json format with the following fields extracted from the input text:\n{format_fields(FIELDS)}\n\n\nAdditionally, add a confidence score between 0 and 1 to the same payload that indicates how certain you are about the correctness of the details.\n\n\nIf you couldn't find certain details, make them `null`.\n\n\nNormalise the date to YYYY-mm-dd.\n\n\nNormalise the location to \"number street, city, state, postcode\"\n\n\nOnly reply with json and nothing more.\n\n\nHere is the input text: \n```\n{text}\n```\n\n\nHere is also the input text's filename: \n```\n{filename}\n```\n",
         temperature=0.7,
         max_tokens=COMPLETION_LENGTH,
         top_p=1,
@@ -216,6 +236,9 @@ def main():
             responses.append(json.loads(response))
         except:
             responses.append(response)
+
+        if DO_ONE:
+            break
         
     return {
         "responses": responses
