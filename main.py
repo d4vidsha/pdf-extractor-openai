@@ -10,34 +10,36 @@ import slate3k as slate
 from pdf2image import convert_from_path
 import pytesseract
 
-# OpenAI API key path
+# OpenAI API key path.
 OPENAI_API_KEY_PATH = "private/openai_api_key.txt"
 
-# Folder target containing the pdfs
+# Folder where all the PDFs are stored.
 FOLDER = "samples"
 
-# Folder where all the output files will be stored
+# Folder where all the output files will be stored.
 OUTPUT_FOLDER = "tests"
 
-# Debug mode
+# Debug mode to print extra information such as responses from openai.
 DEBUG = True
 
-# Do one PDF only
+# Do one PDF only if there are multiple PDFs in the `FOLDER`.
 DO_ONE = True
 
-# Completion length
+# Completion length (this is the length of an openai completion).
 COMPLETION_LENGTH = 300
 
-# Summarization length
+# Summarization length (this is the length of an openai prompt).
 SUMMARIZATION_LENGTH = 300
 
-# Maximum content length
+# Maximum content length of a request to openai. This is the maximum
+# length of the prompt + the completion length and should not be
+# changed. This is defined by openai.
 MAX_CONTENT_LENGTH = 4097
 
-# Chunk size
+# Chunk size of text to summarize.
 CHUNK_SIZE = MAX_CONTENT_LENGTH - SUMMARIZATION_LENGTH
 
-# Fields to extract
+# Fields to extract from PDF file.
 FIELDS = [
     "date",
     "client_name",
