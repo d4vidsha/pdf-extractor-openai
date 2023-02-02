@@ -44,6 +44,7 @@ FIELDS = [
     "location"
 ]
 
+
 def send_to_file(f, data):
     '''
     Send data to a file `f`. Data can be a dict or a list.
@@ -54,6 +55,7 @@ def send_to_file(f, data):
     else:
         fp = open(join(dirname(realpath(__file__)), f), "w")
         fp.close()
+
 
 def pdf_to_text_pypdf(pdf_path):
     '''
@@ -66,6 +68,7 @@ def pdf_to_text_pypdf(pdf_path):
             text += page.extract_text()
     return text
 
+
 def pdf_to_text_slate(pdf_path):
     '''
     Extract text from pdf using slate.
@@ -75,16 +78,19 @@ def pdf_to_text_slate(pdf_path):
         text = "".join(doc)
     return text
 
+
 def pdf_to_text_ocr(pdf_path):
     '''
     Extract text from pdf using OCR.
     '''
     with TemporaryDirectory() as path:
-        images_from_path = convert_from_path(pdf_path, output_folder=path, fmt="jpg")
+        images_from_path = convert_from_path(
+            pdf_path, output_folder=path, fmt="jpg")
         text = ""
         for image in images_from_path:
             text += pytesseract.image_to_string(image)
     return text
+
 
 def chunkify(text, chunk_size=CHUNK_SIZE):
     '''
@@ -97,6 +103,7 @@ def chunkify(text, chunk_size=CHUNK_SIZE):
         text = text[index:]
     chunks.append(text)
     return chunks
+
 
 def openai_summarize_helper(text):
     '''
@@ -120,23 +127,25 @@ def openai_summarize_helper(text):
 
     return response.get("choices")[0].get("text")
 
+
 def openai_summarize(text):
     '''
     Summarize a given text using openai. If the text is too long, split it
     into smaller chunks and summarize each chunk.
     '''
     if len(text) > CHUNK_SIZE:
-        
+
         # split the text into chunks
         chunks = chunkify(text)
-        
+
         # summarize each chunk
         summaries = [openai_summarize_helper(chunk) for chunk in chunks]
-        
+
         # return the summarized text
         return "\n".join(summaries)
     else:
         return openai_summarize_helper(text)
+
 
 def format_fields(fields):
     '''
@@ -147,6 +156,7 @@ def format_fields(fields):
     - field3
     '''
     return "\n".join([f"- {field}" for field in fields])
+
 
 def openai_generate(text, filename):
     '''
@@ -176,6 +186,7 @@ def openai_generate(text, filename):
 
     return response.get("choices")[0].get("text")
 
+
 def extract(f):
     '''
     Extract text from a pdf file and send it to openai to generate a response.
@@ -184,10 +195,11 @@ def extract(f):
     text = pdf_to_text_ocr(join(dirname(realpath(__file__)), FOLDER, f))
     if DEBUG:
         print(text)
-    
-    # send the text to a file that has the same name as the pdf but 
+
+    # send the text to a file that has the same name as the pdf but
     # with .txt extension to the same folder
-    send_to_file(join(dirname(realpath(__file__)), FOLDER, "".join(f.split(".")[:-1]) + ".txt"), text)
+    send_to_file(join(dirname(realpath(__file__)), FOLDER,
+                 "".join(f.split(".")[:-1]) + ".txt"), text)
 
     # use openai to generate a response
     try:
@@ -195,7 +207,7 @@ def extract(f):
     except Exception as e:
         print(e)
         response = ""
-    
+
     # print the response
     if DEBUG:
         try:
@@ -215,7 +227,8 @@ def extract(f):
 
     return response
 
-def main(): 
+
+def main():
 
     openai.api_key_path = OPENAI_API_KEY_PATH
 
@@ -223,7 +236,7 @@ def main():
 
     # extract text from sample folder
     for f in os.listdir(join(dirname(realpath(__file__)), FOLDER)):
-        
+
         # skip non pdf files
         if not f.endswith(".pdf"):
             continue
@@ -239,14 +252,16 @@ def main():
 
         if DO_ONE:
             break
-        
+
     return {
         "responses": responses
     }
 
+
 if __name__ == "__main__":
     output = main()
-    
-    # send the output to a file called output#.json. If the file already 
+
+    # send the output to a file called output#.json. If the file already
     # exists, create a new file with a number appended to the end
-    send_to_file(f"{OUTPUT_FOLDER}/output" + str(len(os.listdir(join(dirname(realpath(__file__)), OUTPUT_FOLDER))) + 1) + ".json", output)
+    send_to_file(f"{OUTPUT_FOLDER}/output" + str(len(os.listdir(
+        join(dirname(realpath(__file__)), OUTPUT_FOLDER))) + 1) + ".json", output)
