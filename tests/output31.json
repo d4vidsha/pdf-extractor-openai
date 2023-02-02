@@ -1,0 +1,5 @@
+{
+    "responses": [
+        "{    \"date\": \"2022-11-07\",    \"client_name\": \"David Jones\",    \"location\": \"9 Glasshouse Road, Collingwood VIC 3066\",    \"contacts\": [        {            \"name\": \"Alisa Kerr\",            \"phone\": \"08:00\"        },        {            \"name\": \"Florina Sadikay\",            \"phone\": \"08:00\"        },        {            \"name\": \"Atia Cader\",            \"phone\": \"0411 477 486 08:00\"        },        {            \"name\": \"Hannay Tempany\",            \"phone\": \"0422 150 743 08:00\"        },        {            \"name\": \"Amanda Ong-Riley\",            \"phone\": \"0421 047 290 08:00\"        },        {            \"name\": \"Isamu Sawa\",            \"phone\": \"0412 403 290 08:00\"        },        {            \"name\": \"Lawrence Atkin\",            \"phone\": \"0478 049 768 08:00\"        }"
+    ]
+}
